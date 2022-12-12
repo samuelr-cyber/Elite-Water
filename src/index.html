@@ -20,7 +20,7 @@
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
               <ul>
                   <li><a href="">HOME</a></li>
-                  <li><a href="">ABOUT</a></li>
+                  <li><a href="" onclick="scrollToAbout()">ABOUT</a></li>
                   <li><a href="">PRODUCTS</a></li>
                   <li><a href="">BLOG</a></li>
                   <li><a href="">CONTACT</a></li>
@@ -41,34 +41,48 @@
     </section>
 
 <!--- About --->
-<section class="about">
+<section class="about" id="about">
     <h1>
       About Our Company
     </h1>
-      <h2>
-        Founding
-      </h2>
-        <p>
-          Our story is a unique and improbable one, and it all began in the freezing wilderness of Antartica. It was there, on a remote and desolate stretch of ice, that our founders, Robert and Samuel, stumbled upon a hidden spring of pure, delicious water. They were immediately captivated by the water's incredible taste, and they knew they had discovered something truly special. <br>Determined to share this incredible find with the world, Robert and Samuel embarked on a daring journey to bring the water to the masses. They braved treacherous storms and subzero temperatures, using their ingenuity and determination to overcome every obstacle in their path. After months of hard work and perseverance, Robert and Samuel successfully developed a unique filtration and bottling system that allowed them to capture the pure, delicious water and sell it to the world. And so, Elite Water was born. <br> Since then, we have continued to innovate and improve our processes, and we are now known as the finest water company in the world. We are incredibly proud of our journey and the water we produce, and we hope you will join us on our journey to bring the purest, most delicious water to every corner of the globe.
-        </p>
-      <h2>
-        Our Process
-      </h2>
-        <p>
-          At Elite Water, we use a proprietary and highly complex refinement process to ensure that our water is of the highest quality and purity. <br> First, we collect water from a hidden spring in the frozen wilderness of Antarctica. This water is naturally pure and delicious, thanks to its isolation and the unique conditions of the region. We then transport the water to our state-of-the-art facility, where it undergoes a series of tests using advanced spectroscopy and chromatography techniques to identify and measure any impurities or contaminants. <br>Next, we pass the water through a series of highly specialized filtration systems, including reverse osmosis, ultrafiltration, and ion exchange. This removes impurities and contaminants at the molecular level, leaving us with water that is pure, crystal clear, and delicious. <br> Finally, the water is carefully bottled and sealed, using advanced technology to ensure that it stays fresh and free from contaminants. Every bottle of Elite Water is inspected and tested multiple times throughout the process, using the latest analytical techniques to ensure that it meets our exacting standards for quality and purity. Through our dedication to innovation and excellence, Elite Water has become the finest water company in the world, offering water that is pure, delicious, and second to none.
-        </p>
-      <h2>
-        Environmental Commitment
-      </h2>
-      <p>
-        At Elite Water, we are committed to protecting the environment and preserving the natural beauty of our planet. We are proud to use only sustainable, eco-friendly practices in all of our operations, from the collection of water to the production and distribution of our products.<br>Our state-of-the-art filtration and bottling systems are designed to minimize waste and conserve water, and we use only metal and glass bottles to reduce plastic pollution. We also participate in a variety of conservation programs and initiatives to help protect the natural resources that are so important to our business and our planet.<br>We take our environmental responsibility seriously, and we are dedicated to using our business as a force for good. We are proud to offer water that is pure, delicious, and sustainably sourced, and we look forward to continuing our commitment to the environment for years to come.
-      </p>
+      <div class="row">
+        <div class="course-col">
+          <h2>
+            Founding
+          </h2>
+          <p>
+            Our story is a unique and improbable one, and it all began in the freezing wilderness of Antartica. It was there, on a remote and desolate stretch of ice, that our founders, Robert and Samuel, stumbled upon a hidden spring of pure, delicious water. They were immediately captivated by the water's incredible taste, and they knew they had discovered something truly special. <br>Determined to share this incredible find with the world, Robert and Samuel embarked on a daring journey to bring the water to the masses. They braved treacherous storms and subzero temperatures, using their ingenuity and determination to overcome every obstacle in their path. After months of hard work and perseverance, Robert and Samuel successfully developed a unique filtration and bottling system that allowed them to capture the pure, delicious water and sell it to the world. And so, Elite Water was born. <br> Since then, we have continued to innovate and improve our processes, and we are now known as the finest water company in the world. We are incredibly proud of our journey and the water we produce, and we hope you will join us on our journey to bring the purest, most delicious water to every corner of the globe.
+          </p>
+        </div>
+        <div class="course-col">
+          <h2>
+            Our Process
+          </h2>
+            <p>
+              At Elite Water, we use a proprietary and highly complex refinement process to ensure that our water is of the highest quality and purity. <br> First, we collect water from a hidden spring in the frozen wilderness of Antarctica. This water is naturally pure and delicious, thanks to its isolation and the unique conditions of the region. We then transport the water to our state-of-the-art facility, where it undergoes a series of tests using advanced spectroscopy and chromatography techniques to identify and measure any impurities or contaminants. <br>Next, we pass the water through a series of highly specialized filtration systems, including reverse osmosis, ultrafiltration, and ion exchange. This removes impurities and contaminants at the molecular level, leaving us with water that is pure, crystal clear, and delicious. <br> Finally, the water is carefully bottled and sealed, using advanced technology to ensure that it stays fresh and free from contaminants. Every bottle of Elite Water is inspected and tested multiple times throughout the process, using the latest analytical techniques to ensure that it meets our exacting standards for quality and purity. Through our dedication to innovation and excellence, Elite Water has become the finest water company in the world, offering water that is pure, delicious, and second to none.
+            </p>
+        </div>
+        <div class="course-col">
+          <h2>
+            Environmental Commitment
+          </h2>
+            <p>
+              At Elite Water, we are committed to protecting the environment and preserving the natural beauty of our planet. We are proud to use only sustainable, eco-friendly practices in all of our operations, from the collection of water to the production and distribution of our products.<br>Our state-of-the-art filtration and bottling systems are designed to minimize waste and conserve water, and we use only metal and glass bottles to reduce plastic pollution. We also participate in a variety of conservation programs and initiatives to help protect the natural resources that are so important to our business and our planet.<br>We take our environmental responsibility seriously, and we are dedicated to using our business as a force for good. We are proud to offer water that is pure, delicious, and sustainably sourced, and we look forward to continuing our commitment to the environment for years to come.
+            </p>
+        </div>
+      </div>
 </section>
 
 <!-- Products -->
-<section>
-  
+<section class="products">
+  <h2>
+    Products & Services
+  </h2>
+    <p>
+      Please, browse our products and services to see how you can make your life more ELITE!
+    </p>
 </section>
+
 <!---Javascript for Toggle Menu Icons--->
 <script>
   var navLinks = document.getElementById("navLinks");
@@ -77,6 +91,10 @@
   }
   function hideMenu(){
     navLinks.style.right = "-200px";
+  }
+  var about = document.getElementById("about");
+  function scrollToAbout(){
+    about.scrollIntoView();
   }
 </script>
 

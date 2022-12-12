@@ -89,22 +89,24 @@ nav .fa-solid{
   margin: auto;
   text-align: center;
   padding-top: 100px;
-  background-color:  #FFFF00;
+  padding-bottom: 50px;
+  background-color:  #000000;
   background-size: cover;
   position: relative;
 }
-h1{
+.about h1{
   font-size: 36px;
   font-weight: 600;
+  color: #FFFF00;
 }
-h2{
+.about h2{
   font-size: 20px;
   font-weight: 400;
   text-align: left;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 20px;
 }
-p{
+.about p{
   color: #0000ff;
   font-size: 14px;
   font-weight: 300;
@@ -113,7 +115,27 @@ p{
   text-align: left;
   padding-left: 20px;
 }
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col{
+  flex-basis: 31%;
+  background: #FFFF00;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  margin-left: 1%;
+  margin-right: 1%;
+  transition: 0.5s;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px yellow;
+}
 
+/* Smaller Screen Homepage */
 @media(max-width: 700px){
   .text-box h1{
     font-size: 20px;
@@ -141,5 +163,12 @@ p{
   }
   .nav-links ul{
     padding: 30px;
+  }
+}
+
+/* Smaller Screen About Page */
+@media(max-width: 700px){
+  .row{
+    flex-direction: column;
   }
 }
