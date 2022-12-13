@@ -115,12 +115,15 @@ nav .fa-solid{
   text-align: left;
   padding-left: 20px;
 }
-.row{
+
+/* Below code turns text boxes into rows */
+.product-row{
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
 }
-.course-col{
+
+.info-col{
   flex-basis: 31%;
   background: #FFFF00;
   border-radius: 10px;
@@ -131,9 +134,32 @@ nav .fa-solid{
   margin-right: 1%;
   transition: 0.5s;
 }
-.course-col:hover{
+.info-col:hover{
   box-shadow: 0 0 20px 0px yellow;
 }
+
+/* Products */
+.products{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color:  #0000ff;
+  background-size: cover;
+  position: relative;
+}
+.product-col{
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.product-col img{
+  width: 100%
+}
+
 
 /* Smaller Screen Homepage */
 @media(max-width: 700px){
