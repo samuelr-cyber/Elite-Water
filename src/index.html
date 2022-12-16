@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>Elite Water Company - Sample Site</title>
@@ -14,22 +15,22 @@
     <section class="header">
         <nav>
           <a href="index.html">
-            <img src="../images/water_logo.jpg">
+            <img src="../images/Elite_Water_Company_Logo.png">
           </a>
           <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
               <ul>
                   <li><a href="">HOME</a></li>
-                  <li><a href="" onclick="scrollToAbout()">ABOUT</a></li>
-                  <li><a href="">PRODUCTS</a></li>
-                  <li><a href="">BLOG</a></li>
-                  <li><a href="">CONTACT</a></li>
+                  <li><a onclick="scrollToAbout()">ABOUT</a></li>
+                  <li><a onclick="scrollToProducts()">PRODUCTS</a></li>
+                  <li><a onclick="scrollToBlog()">BLOG</a></li>
+                  <li><a onclick="scrollToContact()">CONTACT</a></li>
                 </ul>
           </div>
           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
     <div class="text-box">
-        <h1>
+        <h1 onclick="testScroll()">
           Elite Water
         </h1>
         <p>
@@ -41,7 +42,7 @@
     </section>
 
 <!--- About --->
-<section class="about" id="about">
+<section class="about" id="about-page">
     <h1>
       About Our Company
     </h1>
@@ -58,7 +59,7 @@
           <h2>
             Our Process
           </h2>
-            <p>
+            <p id="Test-Element">
               At Elite Water, we use a proprietary and highly complex refinement process to ensure that our water is of the highest quality and purity. <br> First, we collect water from a hidden spring in the frozen wilderness of Antarctica. This water is naturally pure and delicious, thanks to its isolation and the unique conditions of the region. We then transport the water to our state-of-the-art facility, where it undergoes a series of tests using advanced spectroscopy and chromatography techniques to identify and measure any impurities or contaminants. <br>Next, we pass the water through a series of highly specialized filtration systems, including reverse osmosis, ultrafiltration, and ion exchange. This removes impurities and contaminants at the molecular level, leaving us with water that is pure, crystal clear, and delicious. <br> Finally, the water is carefully bottled and sealed, using advanced technology to ensure that it stays fresh and free from contaminants. Every bottle of Elite Water is inspected and tested multiple times throughout the process, using the latest analytical techniques to ensure that it meets our exacting standards for quality and purity. Through our dedication to innovation and excellence, Elite Water has become the finest water company in the world, offering water that is pure, delicious, and second to none.
             </p>
         </div>
@@ -74,7 +75,7 @@
 </section>
 
 <!-- Products -->
-<section class="products">
+<section class="products" id="products-page">
   <h2>
     Products & Services
   </h2>
@@ -101,12 +102,31 @@
        </h3>
     </div>
   </div>
+</section>
 
+<!-- Blog -->
+<section class="blog" id="blog-page">
+  <h2>
+    Blog Coming Soon!...
+  </h2>
 
 </section>
 
+<!-- Contact Info -->
+<section class="contact" id="contact-page">
+  <h1>
+    Contact Us To Get Elite Water Today!
+  </h1>
+  <a href="" class="contact-btn">
+    CONTACT US
+  </a>
+</section>
+
+
 <!---Javascript for Toggle Menu Icons--->
 <script>
+
+// Script to show and hide menu
   var navLinks = document.getElementById("navLinks");
   function showMenu(){
     navLinks.style.right = "0";
@@ -114,10 +134,27 @@
   function hideMenu(){
     navLinks.style.right = "-200px";
   }
-  var about = document.getElementById("about");
+
+// Variables and script for menu scrolling
+  var scrollVar;
   function scrollToAbout(){
-    about.scrollIntoView();
+    scrollVar = document.getElementById("about-page");
+    scrollVar.scrollIntoView();
   }
+  function scrollToProducts(){
+    scrollVar = document.getElementById("products-page");
+    scrollVar.scrollIntoView();
+  }
+  function scrollToBlog(){
+    scrollVar = document.getElementById("blog-page");
+    scrollVar.scrollIntoView();
+  }
+  function scrollToContact(){
+    scrollVar = document.getElementById("contact-page");
+    scrollVar.scrollIntoView();
+  }
+
+
 </script>
 
 </body>

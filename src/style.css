@@ -90,7 +90,7 @@ nav .fa-solid{
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color:  #000000;
+  background-color:  #003366;
   background-size: cover;
   position: relative;
 }
@@ -125,7 +125,7 @@ nav .fa-solid{
 
 .info-col{
   flex-basis: 31%;
-  background: #FFFF00;
+  background-color: rgb(240, 240, 0);
   border-radius: 10px;
   margin-bottom: 5%;
   padding: 20px 12px;
@@ -145,19 +145,29 @@ nav .fa-solid{
   text-align: center;
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color:  #0000ff;
+  background-color:  #003366;
   background-size: cover;
   position: relative;
 }
 .product-col{
-  flex-basis: 32%;
+  flex-basis: 25%;
   border-radius: 10px;
   margin-bottom: 30px;
   position: relative;
   overflow: hidden;
+  padding: 25px;
 }
 .product-col img{
   width: 100%
+}
+
+/* Blog */
+
+/* Contact Info */
+.contact{
+  margin: 100px auto;
+  width: 80%;
+
 }
 
 
