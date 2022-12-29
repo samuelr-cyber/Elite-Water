@@ -10,7 +10,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 nav{
     display: flex;
@@ -90,11 +90,6 @@ This will give it some animation and make it look a little sleeker
 Working on bugs to make it mesh with the current code
 */
 
-/* body {
-  overflow: hidden;
-  background: rgb(25,35,125);
-} */
-
 div.drop-container {
   position: absolute;
   top: 0;
@@ -145,7 +140,6 @@ div.drop-container:before,
 div.drop-container:after {
   content: '';
   position: absolute;
-  z-index: -1;
   top: 55%;
   right: 50%;
   transform: translate(50%) rotateX(75deg);
