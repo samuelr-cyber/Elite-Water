@@ -2,15 +2,14 @@
 <html>
 <head>
   <link rel="stylesheet" href="elite_glass.css">
+  <link rel="icon" href="../images/favicon.ico">
 </head>
 <body>
   <section class="elite-glass-image">
     <img src="../images/glass_water_generated_01.png"></img>
     <div class="fade"></div>
     <div class="background-color"></div>
-    <div class="button-flex-parent">
-      <button class="purchase-button" id="purchase">Purchase</button>
-    </div>
+    <button class="purchase-button" id="purchase">Purchase</button>
   </section>
 
   <section class="elite-glass-product-page">
@@ -19,9 +18,9 @@
 </body>
 
 <script>
-document.getElementById("purchase")
+document.getElementById("purchase").addEventListener("click", goToCheckoutPage);
 function goToCheckoutPage(){
-
+  window.location.href="checkout_page.html";
 }
 
 </script>
